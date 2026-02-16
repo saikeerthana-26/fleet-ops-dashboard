@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FleetOps Dashboard
 
-## Getting Started
+A lightweight fleet management dashboard inspired by Lyft’s Fleets Tooling platform.
 
-First, run the development server:
+## 🚗 Overview
 
+FleetOps Dashboard is a full-stack application that allows fleet operators to:
+
+- View fleet performance metrics (utilization, rides, earnings)
+- Manage vehicle availability (Available, In Ride, Maintenance)
+- Assign or remove drivers from vehicles
+- Monitor daily operational activity
+
+This project simulates internal tooling used to manage vehicle fleets at scale.
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend**
+- Next.js (App Router)
+- React
+- TypeScript
+- Modern CSS (custom SaaS-style UI)
+
+**Backend**
+- Python
+- Flask (REST API)
+- In-memory data store
+
+---
+
+## 🏗 Architecture
+
+- REST API design (`GET`, `PATCH`)
+- Server + Client Components (Next.js)
+- Typed API layer (TypeScript)
+- Clean component-driven UI structure
+
+---
+
+## ▶️ Run Locally
+
+### Backend
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cd backend
+python app.py
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Frontend
+``` bash
+cd frontend
+npm install
+npm run dev
+```
+Open: http://localhost:3000
